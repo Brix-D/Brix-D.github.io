@@ -1,0 +1,16 @@
+.hint {
+
+  .hint__text {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    color: $black-gray;
+    font-weight: 400;
+    @extend %font-exo;
+    text-align: center;
+  }
+}
+
+.header__hint {
+  margin-top: 20px;
+}

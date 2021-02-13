@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@200;400&display=swap");
+.hint .hint__text, .try-button a, .title .title__text {
+  font-family: "Exo", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  min-height: 965px;
+  background: url("../img/header/mountain.png") no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__wrapper {
+  width: 745px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+}
+.title .title__text {
+  font-size: 60px;
+  letter-spacing: 2px;
+  line-height: 75px;
+  color: #282828;
+  font-weight: 250;
+  text-align: center;
+}
+
+.play {
+  height: 60px;
+  width: 60px;
+}
+.play a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.play .play__circle {
+  background: url("../img/header/play_circle.svg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play .play__circle .play__arrow {
+  width: 15px;
+  height: 20px;
+  background: url("../img/header/play_arrow.png") no-repeat;
+}
+.play:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px #8185a3;
+}
+
+.header__play {
+  margin-top: 65px;
+}
+
+.try-button {
+  width: 190px;
+  height: 50px;
+  margin-top: 40px;
+}
+.try-button a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  background-color: #ff6d6d;
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.try-button a:hover {
+  box-shadow: 0px 0px 10px #ff6d6d;
+  text-shadow: 0px 0px 3px #fff;
+}
+
+.hint .hint__text {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  color: #282828;
+  font-weight: 400;
+  text-align: center;
+}
+
+.header__hint {
+  margin-top: 20px;
+}
+
+.promotion {
+  width: 100%;
+  min-height: 1000px;
+  background-color: #fff;
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+}
+
+.promotion__body {
+  width: 1200px;
+  min-height: 100%;
+}
+
+.promotion__sidebar {
+  width: 800px;
+  min-height: 100%;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+}
+.promotion__sidebar .promotion__triangle {
+  background-color: #ff6d6d;
+  width: 100%;
+  height: 1100px;
+  position: absolute;
+  transform: translateX(210px) translateY(550px) rotate(50deg);
+}

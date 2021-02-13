@@ -1,0 +1,27 @@
+header {
+  width: 100%;
+  min-height: 965px;
+  background: url("../img/header/mountain.png") no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header__wrapper {
+  width: 745px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  // margin-top: 220px;
+}
+
+@import "title.scss";
+@import "play.scss";
+@import "button.scss";
+@import "hint.scss";

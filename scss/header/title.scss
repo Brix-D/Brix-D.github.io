@@ -1,0 +1,12 @@
+.title {
+  width: 100%;
+  .title__text {
+    font-size: 60px;
+    letter-spacing: 2px;
+    line-height: 75px;
+    color: $black-gray;
+    font-weight: 250;
+    text-align: center;
+    @extend %font-exo;
+  }
+}
