@@ -1,4 +1,21 @@
 .promotion__body {
   width: 1200px;
   min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .promotion__wrapper {
+    // margin-left: 150px;
+    width: 600px;
+    // height: 500px;
+    // background-color: $blue-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
 }
+
+@import "subtitle.scss";
+@import "title.scss";
+@import "text.scss";

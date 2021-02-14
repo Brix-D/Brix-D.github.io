@@ -4,6 +4,7 @@ $red: #ff6d6d;
 $blue-gray: #8185a3;
 $black-gray: #282828;
 $light-gray: #ececec;
+$white-gray: #f6f5f3;
 $white: #fff;
 
 // Подключение файла со шрифтами
@@ -23,6 +24,10 @@ $white: #fff;
 
 @import "header/header.scss";
 
-// блог предложения
+// блок предложения
 
 @import "promotion/promotion.scss";
+
+// блок фичи
+
+@import "features/features.scss";

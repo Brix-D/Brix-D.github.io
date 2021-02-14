@@ -1,0 +1,14 @@
+.text {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  color: $black-gray;
+  @extend %font-exo;
+  font-weight: 500;
+
+}
+.promotion__text {
+  p {
+    margin-top: 40px;
+  }
+}
