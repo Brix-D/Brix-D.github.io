@@ -12,5 +12,10 @@
 .responsive__wrapper {
   width: 1600px;
   height: 700px;
-  background-color: $blue-gray;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
+
+@import "laptop.scss";
+@import "body.scss";
