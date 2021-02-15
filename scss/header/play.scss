@@ -13,9 +13,7 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display_flex($justify_content: center, $align_items: center);
 
     .play__arrow {
       width: 15px;

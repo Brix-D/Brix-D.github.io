@@ -1,9 +1,7 @@
 .responsive {
   width: 100%;
   min-height: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display_flex($justify_content: center, $align_items: center);
   position: relative;
 }
 
@@ -12,9 +10,7 @@
 .responsive__wrapper {
   width: 1600px;
   height: 700px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  @include display_flex($justify_content: start, $align_items: center);
 }
 
 @import "laptop.scss";

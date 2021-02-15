@@ -5,19 +5,16 @@ header {
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  @include display_flex($justify_content: center, $align_items: center);
 }
 
 .header__wrapper {
   width: 745px;
   min-height: 380px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
+  @include display_flex($flex_direction: column, $justify_content: start, $align_items: center);
   // margin-top: 220px;
 }
 

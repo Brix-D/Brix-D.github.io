@@ -1,0 +1,21 @@
+.emblems {
+  width: 85%;
+  height: 30%;
+  @include display_flex($justify_content: space-between, $align_items: center);
+  // background-color: $black-gray;
+
+  .emblems__item {
+    height: auto;
+
+    img {
+      filter: invert(1) opacity(0.6);
+
+      &:hover {
+        //filter: invert(1);
+        filter: invert(1) opacity(1);
+      }
+    }
+
+  }
+
+}

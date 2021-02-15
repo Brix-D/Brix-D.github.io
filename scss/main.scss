@@ -20,6 +20,14 @@ $white: #fff;
   box-sizing: border-box;
 }
 
+// миксин для display flex
+@mixin display_flex($flex_direction: row, $justify_content: unset, $align_items: unset) {
+  display: flex;
+  flex-direction: $flex_direction;
+  justify-content: $justify_content;
+  align-items: $align_items;
+}
+
 // блок шапка
 
 @import "header/header.scss";
@@ -32,6 +40,10 @@ $white: #fff;
 
 @import "features/features.scss";
 
-// блог адаптивный дизайн
+// блок адаптивный дизайн
 
 @import "responsive/responsive.scss";
+
+// блок клиенты
+
+@import "clients/clients.scss";

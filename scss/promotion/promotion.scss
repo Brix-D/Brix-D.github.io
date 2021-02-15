@@ -2,9 +2,7 @@
   width: 100%;
   min-height: 1000px;
   background-color: $white;
-  display: flex;
-  justify-content: start;
-  align-items: stretch;
+  @include display_flex($justify_content: start, $align_items: stretch);
 }
 
 @import "body.scss";
