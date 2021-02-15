@@ -427,7 +427,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 .clients .clients__wrapper .emblems .emblems__item {
   height: auto;

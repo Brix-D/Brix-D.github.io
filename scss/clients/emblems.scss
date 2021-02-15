@@ -1,7 +1,7 @@
 .emblems {
   width: 85%;
   height: 30%;
-  @include display_flex($justify_content: space-between, $align_items: center);
+  @include display_flex($justify_content: space-between, $align_items: flex-end);
   // background-color: $black-gray;
 
   .emblems__item {
