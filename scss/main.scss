@@ -5,6 +5,7 @@ $blue-gray: #8185a3;
 $black-gray: #282828;
 $light-gray: #ececec;
 $white-gray: #f6f5f3;
+$browser-gray: #e2e1e2;
 $white: #fff;
 
 // Подключение файла со шрифтами
@@ -47,3 +48,7 @@ $white: #fff;
 // блок клиенты
 
 @import "clients/clients.scss";
+
+// блок браузер
+
+@import "browser/browser.scss";

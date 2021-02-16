@@ -9,7 +9,7 @@
 
   @include display_flex($justify_content: center, $align_items: center);
 
-  .clients__wrapper {
+  .clients__inner {
     width: 75%;
     height: 700px;
     // background-color: $white-gray;

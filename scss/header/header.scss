@@ -11,7 +11,7 @@ header {
   @include display_flex($justify_content: center, $align_items: center);
 }
 
-.header__wrapper {
+.header__inner {
   width: 745px;
   min-height: 380px;
   @include display_flex($flex_direction: column, $justify_content: start, $align_items: center);

@@ -3,7 +3,7 @@
   min-height: 100%;
   @include display_flex($justify_content: center, $align_items: center);
 
-  .promotion__wrapper {
+  .promotion__inner {
     // margin-left: 150px;
     width: 600px;
     // height: 500px;

@@ -7,7 +7,7 @@
 
 @import "trapeze.scss";
 
-.responsive__wrapper {
+.responsive__inner {
   width: 1600px;
   height: 700px;
   @include display_flex($justify_content: start, $align_items: center);
