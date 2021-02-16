@@ -474,7 +474,7 @@ header {
 .browser .browser__inner .browser__picture {
   width: 100%;
   height: 50%;
-  background: url("../img/browser/browser.png") no-repeat;
+  background: url("../img/browser/Browser.png") no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: row;
