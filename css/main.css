@@ -271,7 +271,7 @@ header {
 }
 
 .pen-holder {
-  background: url("../img/features/Penholder.png") no-repeat;
+  background: url("../img/features/penholder.png") no-repeat;
   width: 300px;
   height: 330px;
   left: 210px;
@@ -279,7 +279,7 @@ header {
 }
 
 .earphones {
-  background: url("../img/features/Earphones2.png") no-repeat;
+  background: url("../img/features/earphones2.png") no-repeat;
   width: 220px;
   height: 280px;
   right: 250px;
@@ -287,7 +287,7 @@ header {
 }
 
 .coffee-cup {
-  background: url("../img/features/Coffeecup2.png") no-repeat;
+  background: url("../img/features/coffeecup2.png") no-repeat;
   width: 240px;
   height: 250px;
   right: 150px;
