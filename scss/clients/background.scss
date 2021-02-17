@@ -1,0 +1,17 @@
+.clients__background {
+  width: 100%;
+  min-height: 1000px;
+  background-color: #000;
+  opacity: 1;
+  position: absolute;
+  z-index: -1;
+
+  .clients_polygon-art {
+    width: 100%;
+    min-height: 1000px;
+    background: url("../img/clients/polygon_art.png") repeat-y;
+    background-size: contain;
+    opacity: 0.8;
+
+  }
+}

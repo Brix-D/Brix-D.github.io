@@ -1,0 +1,24 @@
+header {
+  width: 100%;
+  min-height: 965px;
+  background: url("../img/header/mountain.png") no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  @include display_flex($justify_content: center, $align_items: center);
+}
+
+.header__inner {
+  width: 745px;
+  min-height: 380px;
+  @include display_flex($flex_direction: column, $justify_content: start, $align_items: center);
+  // margin-top: 220px;
+}
+
+@import "title.scss";
+@import "play.scss";
+@import "button.scss";
+@import "hint.scss";

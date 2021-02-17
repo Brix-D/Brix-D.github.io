@@ -1,0 +1,7 @@
+.responsive__body {
+  width: 36%;
+  height: 50%;
+  // background-color: $light-gray;
+  margin-left: 7%;
+  @include display_flex($flex_direction: column, $justify_content: space-between);
+}

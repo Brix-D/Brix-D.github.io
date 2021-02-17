@@ -1,0 +1,53 @@
+.clients__feedback {
+  width: 100%;
+  height: 60%;
+  @include display_flex($justify_content: space-between, $align_items: stretch);
+  // background-color: $blue-gray;
+
+  .feedback {
+    width: 28%;
+    height: 100%;
+    // background-color: $red;
+
+    @include display_flex($flex_direction: column, $align_items: center);
+
+    .feedback__picture {
+
+      & img {
+
+      }
+    }
+
+    .feedback__title {
+      font-size: 22px;
+      letter-spacing: 1px;
+      line-height: 24px;
+      color: $white;
+      font-weight: 500;
+      @extend %font-exo;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .feedback__subtitle {
+      font-size: 16px;
+      color: $red;
+      font-weight: 500;
+      @extend %font-exo;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .feedback__text {
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 26px;
+      color: $white;
+      @extend %font-exo;
+      font-style: italic;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+  }
+}

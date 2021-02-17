@@ -1,0 +1,62 @@
+// цвета страницы
+
+$red: #ff6d6d;
+$violet: #323969;
+$light-violet: #464c77;
+$blue-gray: #8185a3;
+$black-gray: #282828;
+$light-gray: #ececec;
+$white-gray: #f6f5f3;
+$browser-gray: #e2e1e2;
+$white: #fff;
+
+// Подключение файла со шрифтами
+
+@import "fonts/fonts.scss";
+
+// обнуление базовых стилей страницы
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+// миксин для display flex
+@mixin display_flex($flex_direction: row, $justify_content: unset, $align_items: unset) {
+  display: flex;
+  flex-direction: $flex_direction;
+  justify-content: $justify_content;
+  align-items: $align_items;
+}
+
+// блок шапка
+
+@import "header/header.scss";
+
+// блок предложения
+
+@import "promotion/promotion.scss";
+
+// блок фичи
+
+@import "features/features.scss";
+
+// блок адаптивный дизайн
+
+@import "responsive/responsive.scss";
+
+// блок клиенты
+
+@import "clients/clients.scss";
+
+// блок браузер
+
+@import "browser/browser.scss";
+
+// блок заказ
+@import "order/order.scss";
+
+// блок подвал
+@import "footer/footer.scss";

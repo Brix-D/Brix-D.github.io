@@ -1,0 +1,15 @@
+.order__hint {
+  opacity: 0.6;
+  .hint__text {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 75px;
+    color: $white-gray;
+    font-weight: 400;
+
+    @extend %font-exo;
+    & .hint__link {
+      color: $white-gray;
+    }
+  }
+}
