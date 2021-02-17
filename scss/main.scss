@@ -1,6 +1,11 @@
 // цвета страницы
 
 $red: #ff6d6d;
+<<<<<<< HEAD
+=======
+$violet: #323969;
+$light-violet: #464c77;
+>>>>>>> 0005398f56cf3b381e0fcfe71da24df579b498d1
 $blue-gray: #8185a3;
 $black-gray: #282828;
 $light-gray: #ececec;
@@ -52,3 +57,12 @@ $white: #fff;
 // блок браузер
 
 @import "browser/browser.scss";
+<<<<<<< HEAD
+=======
+
+// блок заказ
+@import "order/order.scss";
+
+// блок подвал
+@import "footer/footer.scss";
+>>>>>>> 0005398f56cf3b381e0fcfe71da24df579b498d1
