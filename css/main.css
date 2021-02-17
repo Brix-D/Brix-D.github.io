@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@200;400;500&display=swap");
-<<<<<<< HEAD
-.clients .clients__inner .clients__feedback .feedback .feedback__text, .clients .clients__inner .clients__feedback .feedback .feedback__subtitle, .clients .clients__inner .clients__feedback .feedback .feedback__title, .text, .title, .subtitle, .hint .hint__text, .try-button a, .header__title .header__text {
-=======
 .order__inner .order__hint .hint__text, .order__inner .order__form form .form__text-input, .clients .clients__inner .clients__feedback .feedback .feedback__text, .clients .clients__inner .clients__feedback .feedback .feedback__subtitle, .clients .clients__inner .clients__feedback .feedback .feedback__title, .text, .title, .subtitle, .hint .hint__text, .red-button, .header__title .header__text {
->>>>>>> 0005398f56cf3b381e0fcfe71da24df579b498d1
   font-family: "Exo", sans-serif;
 }
 
@@ -82,21 +78,11 @@ header {
   margin-top: 65px;
 }
 
-<<<<<<< HEAD
-.try-button {
-=======
 .header__try-button {
->>>>>>> 0005398f56cf3b381e0fcfe71da24df579b498d1
   width: 190px;
   height: 50px;
   margin-top: 40px;
 }
-<<<<<<< HEAD
-.try-button a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-=======
 
 .try-button {
   display: inline-block;
@@ -105,7 +91,6 @@ header {
 }
 
 .red-button {
->>>>>>> 0005398f56cf3b381e0fcfe71da24df579b498d1
   text-transform: uppercase;
   background-color: #ff6d6d;
   font-size: 16px;
@@ -117,11 +102,7 @@ header {
   text-decoration: none;
   border-radius: 3px;
 }
-<<<<<<< HEAD
-.try-button a:hover {
-=======
 .red-button:hover {
->>>>>>> 0005398f56cf3b381e0fcfe71da24df579b498d1
   box-shadow: 0px 0px 10px #ff6d6d;
   text-shadow: 0px 0px 3px #fff;
 }
@@ -510,8 +491,6 @@ header {
   left: 0.4%;
   height: 85.5%;
   background-color: #e2e1e2;
-<<<<<<< HEAD
-=======
 }
 
 .order {
@@ -596,5 +575,4 @@ header {
 footer {
   width: 100%;
   min-height: 330px;
->>>>>>> 0005398f56cf3b381e0fcfe71da24df579b498d1
 }
