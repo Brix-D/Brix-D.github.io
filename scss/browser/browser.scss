@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 965px;
   @include display_flex($justify_content: center, $align_items: stretch);
-  background-color: $white-gray;
+  background-color: $background-secondary;
 
 
   .browser__inner {

@@ -1,5 +1,5 @@
 .features {
-  background-color: $white-gray;
+  background-color: $background-secondary;
   min-height: 1000px;
   @include display_flex($justify_content: center, $align_items: center);
   position: relative;

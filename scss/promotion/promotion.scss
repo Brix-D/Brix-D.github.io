@@ -1,7 +1,7 @@
 .promotion {
   width: 100%;
   min-height: 1000px;
-  background-color: $white;
+  background-color: $background-main;
   @include display_flex($justify_content: start, $align_items: stretch);
 }
 

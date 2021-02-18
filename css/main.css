@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@200;400;500&display=swap");
-.order__inner .order__hint .hint__text, .order__inner .order__form form .form__text-input, .clients .clients__inner .clients__feedback .feedback .feedback__text, .clients .clients__inner .clients__feedback .feedback .feedback__subtitle, .clients .clients__inner .clients__feedback .feedback .feedback__title, .text, .title, .subtitle, .hint .hint__text, .red-button, .header__title .header__text {
+.order__inner .order__form form::after, .order__inner .order__form form .form__text-input, .clients .clients__inner .clients__feedback .feedback .feedback__text, .clients .clients__inner .clients__feedback .feedback .feedback__subtitle, .clients .clients__inner .clients__feedback .feedback .feedback__title, .text, .title, .subtitle, .hint .hint__text, .red-button, .header__title .header__text {
   font-family: "Exo", sans-serif;
 }
 
@@ -107,17 +107,21 @@ header {
   text-shadow: 0px 0px 3px #fff;
 }
 
-.hint .hint__text {
-  font-size: 14px;
+.hint {
   letter-spacing: 1px;
-  line-height: 16px;
-  color: #282828;
   font-weight: 400;
+}
+.hint .hint__text {
   text-align: center;
 }
 
 .header__hint {
   margin-top: 20px;
+}
+.header__hint .hint__text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #282828;
 }
 
 .promotion {
@@ -196,6 +200,7 @@ header {
   height: 1100px;
   position: absolute;
   transform: translateX(210px) translateY(550px) rotate(50deg);
+  opacity: 0.8;
 }
 
 .features {
@@ -322,6 +327,7 @@ header {
   background-color: #ff6d6d;
   position: absolute;
   transform: rotate(-34deg) translateX(-240px) translateY(-120px);
+  opacity: 0.8;
 }
 
 .responsive__inner {
@@ -528,6 +534,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .order__inner .order__form form .form__text-input {
   width: 22%;
@@ -558,20 +565,90 @@ header {
   width: 22%;
   height: 50px;
 }
+.order__inner .order__form form::before {
+  content: "";
+  background: url("../img/order/arrow.svg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 19%;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  fill: #fff;
+}
+.order__inner .order__form form::after {
+  content: "30 days free trial for all";
+  position: absolute;
+  color: #f6f5f3;
+  right: 5%;
+  top: -50px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 75px;
+}
 .order__inner .order__hint {
-  opacity: 0.6;
+  color: rgba(246, 245, 243, 0.6);
 }
 .order__inner .order__hint .hint__text {
   font-size: 16px;
-  letter-spacing: 1px;
   line-height: 75px;
-  color: #f6f5f3;
-  font-weight: 400;
 }
 .order__inner .order__hint .hint__text .hint__link {
+  color: rgba(246, 245, 243, 0.6);
+}
+.order__inner .order__hint .hint__text .hint__link:hover {
+  color: #fff;
   color: #f6f5f3;
 }
-footer {
+.footer {
   width: 100%;
   min-height: 330px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer__background {
+  background-color: #fff;
+  width: 100%;
+  min-height: 330px;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.footer__triangle {
+  width: 550px;
+  min-height: 500px;
+  background-color: #ff6d6d;
+  position: absolute;
+  right: 0;
+  opacity: 0.8;
+  transform: rotate(38deg) translateY(-360px) translateX(0px);
+}
+.footer__body {
+  width: 63%;
+  height: 170px;
+  background-color: #323969;
+  z-index: 2;
+  margin-left: 12.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.footer__body .start-ex {
+  width: 20%;
+}
+.footer__body .support {
+  width: 15%;
+}
+.footer__body .about-us {
+  width: 15%;
+}
+.footer__body .newsletter {
+  width: 25%;
+}
+.footer__column {
+  background-color: #f6f5f3;
 }

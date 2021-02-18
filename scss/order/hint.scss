@@ -1,15 +1,34 @@
-.order__hint {
-  opacity: 0.6;
+.hint {
+  //
   .hint__text {
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 75px;
-    color: $white-gray;
-    font-weight: 400;
 
-    @extend %font-exo;
+    // letter-spacing: 1px;
+
+    // font-weight: 400;
+
+
+
+  }
+}
+
+.order__hint {
+  color: rgba($background-secondary, 0.6);
+
+  & .hint__text {
+    font-size: 16px;
+    line-height: 75px;
+    // color: $white-gray;
+
+    //opacity: 0.6;
+
     & .hint__link {
-      color: $white-gray;
+      // color: $white-gray;
+      color: rgba($background-secondary, 0.6);
+      &:hover {
+        color: $background-main;
+        //opacity: 1;
+        color: rgba($background-secondary, 1);
+      }
     }
   }
 }

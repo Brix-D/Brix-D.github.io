@@ -1,6 +1,6 @@
 .title {
 
-  color: $black-gray;
+  color: $main-text;
   @extend %font-exo;
   .title__text {
     font-size: 40px;
@@ -9,7 +9,7 @@
     letter-spacing: 2px;
 
     span {
-      color: $red;
+      color: $decor;
     }
   }
 

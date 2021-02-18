@@ -1,4 +1,28 @@
-footer {
+.footer {
   width: 100%;
   min-height: 330px;
+
+  @include display_flex($justify_content: flex-start, $align_items: center);
+
+  &__background {
+    background-color: $background-main;
+    width: 100%;
+    min-height: 330px;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__triangle {
+    width: 550px;
+    min-height: 500px;
+    background-color: $decor;
+    position: absolute;
+    right: 0;
+    opacity: 0.8;
+    transform: rotate(38deg) translateY(-360px) translateX(0px);
+
+  }
+
+  @import "body.scss";
 }

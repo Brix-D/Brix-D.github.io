@@ -1,7 +1,7 @@
 .background {
   width: 100%;
   min-height: 1000px;
-  background-color: $white;
+  background-color: $background-main;
   overflow: hidden;
   position: absolute;
   z-index: -1;
@@ -9,8 +9,9 @@
   .trapeze {
     width: 45%;
     min-height: 1500px;
-    background-color: $red;
+    background-color: $decor;
     position: absolute;
     transform: rotate(-34deg) translateX(-240px) translateY(-120px);
+    opacity: 0.8;
   }
 }

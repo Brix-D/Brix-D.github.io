@@ -1,0 +1,32 @@
+&__body {
+  width: 63%;
+  height: 170px;
+  background-color: $background-order;
+  z-index: 2;
+  margin-left: 12.5%;
+
+  @include display_flex($justify_content: space-between, $align_items: stretch);
+  & .start-ex {
+    width: 20%;
+
+  }
+
+  & .support {
+    width: 15%;
+   // margin-left: 65px;
+  }
+  & .about-us {
+    width: 15%;
+    //margin-left: 115px;
+  }
+
+  & .newsletter {
+    width: 25%;
+    //margin-left: 95px;
+  }
+}
+
+&__column {
+  background-color: $background-secondary;
+}
+
