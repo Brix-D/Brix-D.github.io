@@ -3,17 +3,17 @@
   min-height: 465px;
   background-color: $violet;
   @include display_flex($justify_content: center, $align_items: center);
-}
 
-.order__inner {
-  width: 75%;
-  height: 370px;
-  // background-color: $white-gray;
+  &__inner {
+    width: 75%;
+    height: 370px;
+    // background-color: $white-gray;
 
-  @include display_flex($flex_direction: column, $justify_content: space-between, $align_items: center);
+    @include display_flex($flex_direction: column, $justify_content: space-between, $align_items: center);
 
-  @import "slogan.scss";
-  @import "form.scss";
-  @import "hint.scss";
+    @import "slogan.scss";
+    @import "form.scss";
+    @import "hint.scss";
+  }
 }
 
