@@ -1,0 +1,33 @@
+
+// шрифты и сброс базовых стилей
+@import "base/all";
+// переменные и миксины
+@import "helpers/all";
+
+
+
+// стили ключевых элементов
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/title";
+@import "layout/subtitle";
+@import "layout/text";
+@import "layout/form";
+@import "layout/hint";
+@import "layout/play";
+@import "layout/button";
+
+// стили основыных секций страницы
+
+@import "components/promotion";
+@import "components/features";
+@import "components/feature-item";
+@import "components/responsive";
+@import "components/laptop";
+@import "components/clients";
+@import "components/feedback";
+@import "components/emblems";
+@import "components/order";
+@import "components/browser";
+@import "components/decor";

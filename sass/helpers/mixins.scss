@@ -1,0 +1,7 @@
+// миксин для display flex
+@mixin display_flex($flex_direction: row, $justify_content: unset, $align_items: unset) {
+  display: flex;
+  flex-direction: $flex_direction;
+  justify-content: $justify_content;
+  align-items: $align_items;
+}

@@ -1,0 +1,23 @@
+.feature-item {
+  &__icon {
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+}

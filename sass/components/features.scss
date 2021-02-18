@@ -1,0 +1,34 @@
+.features {
+  background-color: $background-secondary;
+  min-height: 1000px;
+  @include display_flex($justify_content: center, $align_items: center);
+  position: relative;
+  overflow: hidden;
+
+  &__inner {
+    width: 1360px;
+    height: 570px;
+    @include display_flex($flex_direction: column, $justify_content: space-between);
+  }
+
+  &__upper-row {
+    @include display_flex($flex_direction: column, $align_items: center);
+    width: 100%;
+    height: 50%;
+  }
+
+  &__bottom-row {
+    @include display_flex($justify_content: space-between, $align_items: stretch);
+    width: 100%;
+    height: 50%;
+  }
+
+  &__column {
+    width: 30%;
+    height: 100%;
+    @include display_flex($flex_direction: column, $justify_content: space-between, $align_items: center);
+
+
+  }
+
+}

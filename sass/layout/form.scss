@@ -1,0 +1,66 @@
+.form {
+    width: 100%;
+    height: 100%;
+    @include display_flex($justify_content: space-between, $align_items: center);
+    position: relative;
+
+    &__text-input {
+      width: 22%;
+      height: 50px;
+      background-color: $background-order-input;
+      border-radius: 3px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 75px;
+      font-weight: 400;
+      @extend %font-exo;
+      color: $text-light;
+      padding: 1%;
+      outline: none;
+
+      &::placeholder {
+        color: $text-light;
+        text-transform: uppercase;
+      }
+
+      &:focus {
+        background-color: $background-secondary;
+        color: $text-main;
+        box-shadow: 0px 0px 10px $background-secondary;
+      }
+
+      &:focus::placeholder {
+        color: $text-main;
+      }
+    }
+
+    &__button {
+      width: 22%;
+      height: 50px;
+    }
+
+    &::before {
+      content: "";
+      background: url("../images/elements/arrow.svg") no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 19%;
+      top: -20px;
+      width: 40px;
+      height: 40px;
+      display: block;
+      fill: $text-light;
+    }
+
+    &::after {
+      content: "30 days free trial for all";
+      position: absolute;
+      color: $text-semi-light;
+      right: 5%;
+      top: -50px;
+      font-weight: 400;
+      @extend %font-exo;
+      letter-spacing: 1px;
+      line-height: 75px;
+    }
+  }

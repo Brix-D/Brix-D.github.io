@@ -1,0 +1,37 @@
+.responsive {
+  width: 100%;
+  min-height: 1000px;
+  @include display_flex($justify_content: center, $align_items: center);
+  position: relative;
+
+  &__inner {
+    width: 1600px;
+    height: 700px;
+    @include display_flex($justify_content: start, $align_items: center);
+  }
+  &__body {
+    width: 36%;
+    height: 50%;
+    margin-left: 7%;
+    @include display_flex($flex_direction: column, $justify_content: space-between);
+  }
+
+  &__background {
+    width: 100%;
+    min-height: 1000px;
+    background-color: $background-main;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__trapeze {
+    width: 45%;
+    min-height: 1500px;
+    background-color: $background-decor;
+    position: absolute;
+    transform: rotate(-34deg) translateX(-240px) translateY(-120px);
+    opacity: 0.8;
+  }
+
+}

@@ -1,0 +1,9 @@
+.hint {
+  letter-spacing: 1px;
+  font-weight: 400;
+  .hint__text {
+    @extend %font-exo;
+    text-align: center;
+  }
+}
+

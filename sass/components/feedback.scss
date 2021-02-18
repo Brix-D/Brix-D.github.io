@@ -1,0 +1,43 @@
+.feedback {
+  width: 28%;
+  height: 100%;
+
+  @include display_flex($flex_direction: column, $align_items: center);
+
+  &__picture {
+    & img {
+
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: $text-light;
+    font-weight: 500;
+    @extend %font-exo;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    color: $text-subtitle;
+    font-weight: 500;
+    @extend %font-exo;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: $text-light;
+    @extend %font-exo;
+    font-style: italic;
+    text-align: center;
+    margin-top: 40px;
+  }
+}

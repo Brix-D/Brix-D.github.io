@@ -1,0 +1,47 @@
+.browser {
+  width: 100%;
+  min-height: 965px;
+  @include display_flex($justify_content: center, $align_items: stretch);
+  background-color: $background-main;
+
+
+  &__inner {
+    width: 55%;
+    min-height: 965px;
+    @include display_flex($flex_direction: column, $justify_content: space-between, $align_items: center);
+  }
+
+  &__body {
+    width: 100%;
+    height: 50%;
+    @include display_flex($flex_direction: column, $justify_content: center, $align_items: center);
+  }
+
+  &__subtitle, &__title, &__text {
+    text-align: center;
+  }
+
+  &__title {
+
+  }
+
+  &__text {
+    width: 70%;
+    margin-top: 20px;
+  }
+  &__picture {
+    width: 100%;
+    height: 50%;
+    //background-color: $black-gray;
+    background: url("../images/elements/Browser.png") no-repeat;
+    background-size: cover;
+    @include display_flex($justify_content: center, $align_items: flex-end);
+  }
+  &__window {
+    width: 94.4%;
+    position: relative;
+    left: 0.4%;
+    height: 85.5%;
+    background-color: $background-browser;
+  }
+}
