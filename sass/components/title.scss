@@ -10,4 +10,9 @@
       color: $text-subtitle;
     }
   }
+  @include phone_layout(425px, portrait) {
+    & {
+      text-align: center;
+    }
+  }
 }

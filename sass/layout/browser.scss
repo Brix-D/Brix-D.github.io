@@ -37,6 +37,27 @@
     background-size: cover;
     @include display_flex($justify_content: center, $align_items: flex-end);
   }
+
+  @include phone_layout(425px, portrait) {
+    &__picture {
+      display: none;
+    }
+
+    &__body {
+      min-height: auto;
+    }
+
+    & {
+      min-height: 700px;
+    }
+
+    &__inner {
+      width: 90%;
+      min-height: auto;
+      justify-content: center;
+    }
+  }
+
   &__window {
     width: 94.4%;
     position: relative;

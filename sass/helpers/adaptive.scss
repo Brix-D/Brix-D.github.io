@@ -1,0 +1,6 @@
+// миксин для задаействования стилей для телефона
+@mixin phone_layout($max_size, $orientation) {
+  @media screen and (max-device-width: $max_size) and (orientation: $orientation) {
+    @content;
+  }
+}

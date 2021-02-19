@@ -31,4 +31,32 @@
 
   }
 
+  @include phone_layout(425px, portrait) {
+
+    .features {
+      padding: 0 15px;
+
+      &__upper-row {
+        height: auto;
+        text-align: center;
+      }
+
+      &__bottom-row {
+        @include display_flex($flex_direction: column, $justify_content: space-between, $align_items: center);
+        //height: 1000px;
+        height: auto;
+      }
+
+      &__column {
+        width: 90%;
+        height: auto;
+      }
+
+      &__inner {
+        height: auto;
+
+        align-items: center;
+      }
+    }
+  }
 }

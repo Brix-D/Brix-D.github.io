@@ -126,4 +126,29 @@
   &__text, &__links, .newsletter__email {
     margin-top: 15px;
   }
+
+  @include phone_layout(425px, portrait) {
+    &__body {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin-left: 0px;
+      padding: 20px 20px;
+    }
+
+    &__background {
+      min-height: 610px;
+    }
+
+    &__triangle {
+      width: 100%;
+      min-height: 60%;
+    }
+
+    .start-ex, .support, .about-us, .newsletter{
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
 }

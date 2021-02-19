@@ -22,6 +22,11 @@
 .title .title__text span {
   color: #ff6d6d;
 }
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .title {
+    text-align: center;
+  }
+}
 
 .subtitle {
   font-size: 16px;
@@ -31,6 +36,12 @@
   font-weight: 500;
   text-transform: uppercase;
 }
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .subtitle {
+    text-align: center;
+  }
+}
+
 .text {
   font-size: 16px;
   letter-spacing: 1px;
@@ -98,6 +109,17 @@
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 75px;
+}
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .form {
+    flex-direction: column;
+  }
+  .form__text-input, .form__button {
+    width: 100%;
+  }
+  .form::after, .form::before {
+    display: none;
+  }
 }
 
 .hint {
@@ -234,6 +256,15 @@
   color: #282828;
 }
 
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .header {
+    min-height: 860px;
+    background-position: right bottom;
+  }
+  .header__inner {
+    min-height: 700px;
+  }
+}
 .footer {
   width: 100%;
   min-height: 330px;
@@ -348,6 +379,27 @@
 .footer__text, .footer__links, .footer .newsletter__email {
   margin-top: 15px;
 }
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .footer__body {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-left: 0px;
+    padding: 20px 20px;
+  }
+  .footer__background {
+    min-height: 610px;
+  }
+  .footer__triangle {
+    width: 100%;
+    min-height: 60%;
+  }
+  .footer .start-ex, .footer .support, .footer .about-us, .footer .newsletter {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
 
 .promotion {
   width: 100%;
@@ -359,7 +411,7 @@
   align-items: stretch;
 }
 .promotion__body {
-  width: 1200px;
+  width: 62%;
   min-height: 100%;
   display: flex;
   flex-direction: row;
@@ -367,7 +419,7 @@
   align-items: center;
 }
 .promotion__inner {
-  width: 600px;
+  width: 51%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -394,6 +446,21 @@
   position: absolute;
   transform: translateX(210px) translateY(550px) rotate(50deg);
   opacity: 0.8;
+}
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .promotion__sidebar {
+    display: none;
+  }
+  .promotion__body {
+    width: 100%;
+  }
+  .promotion__inner {
+    width: 80%;
+    align-items: center;
+  }
+  .promotion__text p {
+    margin-top: 10px;
+  }
 }
 
 .features {
@@ -437,6 +504,30 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .features .features {
+    padding: 0 15px;
+  }
+  .features .features__upper-row {
+    height: auto;
+    text-align: center;
+  }
+  .features .features__bottom-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+  .features .features__column {
+    width: 90%;
+    height: auto;
+  }
+  .features .features__inner {
+    height: auto;
+    align-items: center;
+  }
 }
 
 .feature-item__icon {
@@ -501,6 +592,28 @@
   transform: rotate(-34deg) translateX(-240px) translateY(-120px);
   opacity: 0.8;
 }
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .responsive__body {
+    width: 90%;
+    height: auto;
+    margin-left: 0px;
+  }
+  .responsive__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .responsive {
+    min-height: 700px;
+  }
+  .responsive__background {
+    min-height: 700px;
+  }
+  .responsive__trapeze {
+    min-height: 900px;
+  }
+}
 
 .laptop {
   width: 47%;
@@ -510,6 +623,11 @@
   background-position: center center;
 }
 
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .laptop {
+    display: none;
+  }
+}
 .clients {
   width: 100%;
   min-height: 1000px;
@@ -560,6 +678,11 @@
 .clients__inner .emblems__item img:hover {
   filter: invert(1) opacity(1);
 }
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .clients__inner .emblems {
+    display: none;
+  }
+}
 .clients__feedback {
   width: 100%;
   height: 60%;
@@ -567,6 +690,24 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+}
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .clients__feedback {
+    flex-direction: column;
+  }
+  .clients__background {
+    min-height: 1500px;
+  }
+  .clients__polygon-art {
+    min-height: 1500px;
+  }
+  .clients__inner {
+    height: auto;
+  }
+  .clients {
+    min-height: 1500px;
+    align-items: center;
+  }
 }
 
 .feedback {
@@ -602,6 +743,12 @@
   text-align: center;
   margin-top: 40px;
 }
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .feedback {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .emblems {
   width: 85%;
@@ -619,6 +766,11 @@
 }
 .emblems__item img:hover {
   filter: invert(1) opacity(1);
+}
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .emblems {
+    display: none;
+  }
 }
 
 .order {
@@ -662,6 +814,24 @@
 .order__hint .hint__text .hint__link:hover {
   color: #f6f5f3;
 }
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .order {
+    height: auto;
+    padding: 20px 0px;
+  }
+  .order__inner {
+    height: auto;
+  }
+  .order__title .title__text {
+    font-size: 25px;
+  }
+  .order__form {
+    height: 250px;
+  }
+  .order__hint .hint__text {
+    line-height: 40px;
+  }
+}
 
 .browser {
   width: 100%;
@@ -704,6 +874,22 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
+}
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .browser__picture {
+    display: none;
+  }
+  .browser__body {
+    min-height: auto;
+  }
+  .browser {
+    min-height: 700px;
+  }
+  .browser__inner {
+    width: 90%;
+    min-height: auto;
+    justify-content: center;
+  }
 }
 .browser__window {
   width: 94.4%;
@@ -754,6 +940,11 @@
   background: url("../images/elements/bulb.svg") no-repeat;
 }
 
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .pen-holder, .earphones, .coffee-cup {
+    display: none;
+  }
+}
 .newsletter__email {
   width: 100%;
   height: 50px;
@@ -803,4 +994,9 @@
   top: 25%;
   right: 25%;
   position: absolute;
+}
+@media screen and (max-device-width: 425px) and (orientation: portrait) {
+  .newsletter__text-input {
+    width: 90%;
+  }
 }

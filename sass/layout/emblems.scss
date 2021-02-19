@@ -16,4 +16,9 @@
 
   }
 
+  @include phone_layout(425px, portrait) {
+    & {
+      display: none;
+    }
+  }
 }

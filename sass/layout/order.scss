@@ -46,6 +46,33 @@
       }
     }
   }
+
+  @include phone_layout(425px, portrait) {
+    & {
+      height: auto;
+      padding: 20px 0px;
+    }
+
+    &__inner {
+      height: auto;
+    }
+
+    &__title .title__text{
+      font-size: 25px;
+    }
+
+    &__form {
+      height: 250px;
+    }
+
+
+
+    &__hint {
+      .hint__text {
+        line-height: 40px;
+      }
+    }
+  }
 }
 
 

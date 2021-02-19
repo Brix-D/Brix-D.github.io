@@ -38,3 +38,9 @@
 .bulb {
   background: url("../images/elements/bulb.svg") no-repeat;
 }
+
+@include phone_layout(425px, portrait) {
+  .pen-holder, .earphones, .coffee-cup {
+    display: none;
+  }
+}

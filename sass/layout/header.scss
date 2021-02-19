@@ -53,3 +53,31 @@
     }
   }
 }
+
+@include phone_layout(425px, portrait) {
+  .header {
+    min-height: 860px;
+    background-position: right bottom;
+
+    &__inner {
+      min-height: 700px;
+    }
+
+    &__title {
+
+    }
+
+    &__text {
+      //font-size: 100px;
+      //line-height: 120px;
+    }
+
+    &__play {
+
+    }
+
+    &__try-button {
+
+    }
+  }
+}

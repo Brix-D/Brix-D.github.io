@@ -3,6 +3,8 @@
     width: 100%;
     height: 50px;
 
+
+
     form {
       width: 100%;
       height: 100%;
@@ -50,6 +52,12 @@
       top: 25%;
       right: 25%;
       position: absolute;
+    }
+  }
+  @include phone_layout(425px, portrait) {
+
+    &__text-input {
+      width: 90%;
     }
   }
 }
