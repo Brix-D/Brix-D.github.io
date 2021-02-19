@@ -50,6 +50,7 @@
     }
 
     &__background {
+      //min-height: 1500px;
       min-height: 1500px;
     }
 
@@ -64,6 +65,7 @@
     & {
       min-height: 1500px;
       align-items: center;
+      padding: 20px 0px;
     }
   }
 }

@@ -58,7 +58,7 @@
   .header {
     min-height: 860px;
     background-position: right bottom;
-
+    background-attachment: unset;
     &__inner {
       min-height: 700px;
     }

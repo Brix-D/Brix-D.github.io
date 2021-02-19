@@ -45,6 +45,14 @@
     & {
       width: 100%;
       height: auto;
+      margin-top: 2%;
+    }
+    &:first-child {
+      margin-top: 0px;
+    }
+
+    &__text, &__title, &__subtitle {
+      margin-top: 4%;
     }
   }
 }

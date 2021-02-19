@@ -44,12 +44,14 @@
 
     &__inner {
       @include display_flex($justify_content: center, $align_items: center);
+      padding: 20px 0px;
     }
 
     & {
-      min-height: 700px;
+      // min-height: 700px;
+      min-height: auto;
       &__background {
-        min-height: 700px;
+        min-height: 100%;
       }
 
       &__trapeze {

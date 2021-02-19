@@ -46,6 +46,10 @@
     opacity: 0.8;
   }
   @include phone_layout(425px, portrait) {
+    & {
+      padding: 20px 0px;
+    }
+
     &__sidebar {
       display: none;
     }
