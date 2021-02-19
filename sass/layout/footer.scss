@@ -1,0 +1,129 @@
+.footer {
+  width: 100%;
+  min-height: 330px;
+
+  @include display_flex($justify_content: flex-start, $align_items: center);
+
+  &__background {
+    background-color: $background-main;
+    width: 100%;
+    min-height: 330px;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__triangle {
+    width: 550px;
+    min-height: 500px;
+    background-color: $background-decor;
+    position: absolute;
+    right: 0;
+    opacity: 0.8;
+    transform: rotate(38deg) translateY(-360px) translateX(0px);
+
+  }
+
+  &__body {
+    width: 66%;
+    height: 170px;
+    //background-color: $background-order;
+    z-index: 2;
+    margin-left: 12.5%;
+
+    @include display_flex($align_items: stretch);
+
+    & .start-ex {
+      width: 22%;
+      font-size: 27px;
+    }
+
+    & .support {
+      width: 13%;
+      font-size: 22px;
+      margin-left: 8%;
+    }
+
+    & .about-us {
+      width: 12%;
+      font-size: 22px;
+      margin-left: 7%;
+    }
+
+    & .newsletter {
+      width: 27%;
+      font-size: 22px;
+      margin-left: 6%;
+    }
+
+
+  }
+
+  &__column {
+    //background-color: $background-secondary;
+    @include display_flex($flex_direction: column, $justify_content: flex-start, $align_items: stretch);
+
+  }
+
+  &__title {
+    font-size: inherit;
+    line-height: 33px;
+    color: $text-footer-title;
+    font-weight: 400;
+    @extend %font-exo;
+
+    h2 {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+    span {
+      color: $text-footer-light;
+      z-index: 2;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        right: -15px;
+        top: -4px;
+        z-index: -1;
+        background: url("../images/elements/red_triangle.png") no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: $text-main;
+    font-weight: 500;
+
+    @extend %font-exo;
+  }
+
+  &__links {
+    @include display_flex($flex_direction: column, $justify_content: space-around, $align_items: stretch);
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight: 400;
+    @extend %font-exo;
+
+    a {
+      text-decoration: none;
+      color: $text-main;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__text, &__links, .newsletter__email {
+    margin-top: 15px;
+  }
+}

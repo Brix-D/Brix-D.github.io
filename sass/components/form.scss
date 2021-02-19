@@ -15,7 +15,7 @@
       font-weight: 400;
       @extend %font-exo;
       color: $text-light;
-      padding: 1%;
+      padding: 1% 30px;
       outline: none;
 
       &::placeholder {

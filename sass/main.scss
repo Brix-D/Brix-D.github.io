@@ -8,8 +8,6 @@
 
 // стили ключевых элементов
 
-@import "components/header";
-@import "components/footer";
 @import "components/title";
 @import "components/subtitle";
 @import "components/text";
@@ -17,9 +15,12 @@
 @import "components/hint";
 @import "components/play";
 @import "components/button";
+@import "components/socials";
 
 // стили основыных секций страницы
 
+@import "layout/header";
+@import "layout/footer";
 @import "layout/promotion";
 @import "layout/features";
 @import "layout/feature-item";
@@ -31,3 +32,4 @@
 @import "layout/order";
 @import "layout/browser";
 @import "layout/decor";
+@import "layout/newsletter";
