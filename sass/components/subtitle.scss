@@ -14,6 +14,8 @@
   @include phone_layout(425px, portrait) {
     & {
       text-align: center;
+      font-size: 14px;
+      line-height: 16px;
     }
   }
 }

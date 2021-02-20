@@ -48,6 +48,7 @@
   @include phone_layout(425px, portrait) {
     & {
       padding: 20px 0px;
+      min-height: auto;
     }
 
     &__sidebar {

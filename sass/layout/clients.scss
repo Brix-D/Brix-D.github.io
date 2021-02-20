@@ -51,11 +51,12 @@
 
     &__background {
       //min-height: 1500px;
-      min-height: 1500px;
+      min-height: 1530px;
+      top:0;
     }
 
     &__polygon-art {
-      min-height: 1500px;
+      min-height: 1530px;
     }
 
     &__inner {
@@ -63,7 +64,8 @@
     }
 
     & {
-      min-height: 1500px;
+      //min-height: 1500px;
+      min-height: auto;
       align-items: center;
       padding: 20px 0px;
     }

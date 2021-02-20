@@ -56,11 +56,12 @@
 
 @include phone_layout(425px, portrait) {
   .header {
-    min-height: 860px;
+    min-height: 660px;
     background-position: right bottom;
     background-attachment: unset;
     &__inner {
-      min-height: 700px;
+      min-height: 600px;
+      justify-content: center;
     }
 
     &__title {
@@ -68,8 +69,8 @@
     }
 
     &__text {
-      //font-size: 100px;
-      //line-height: 120px;
+      font-size: 30px;
+      line-height: 35px;
     }
 
     &__play {

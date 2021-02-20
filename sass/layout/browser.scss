@@ -44,11 +44,13 @@
     }
 
     &__body {
-      min-height: auto;
+      height: auto;
     }
 
     & {
-      min-height: 700px;
+      //min-height: 700px;
+      min-height: auto;
+      padding: 20px;
     }
 
     &__inner {

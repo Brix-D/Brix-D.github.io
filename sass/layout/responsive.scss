@@ -45,6 +45,8 @@
     &__inner {
       @include display_flex($justify_content: center, $align_items: center);
       padding: 20px 0px;
+
+      height: auto;
     }
 
     & {
@@ -55,7 +57,9 @@
       }
 
       &__trapeze {
-        min-height: 900px;
+        //min-height: 500px;
+        //bottom: -15%;
+        display: none;
       }
     }
   }
