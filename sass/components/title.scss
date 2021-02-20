@@ -1,23 +1,25 @@
 .title {
   color: $text-main;
   @extend %font-exo;
+
+  @include phone_layout(425px, portrait) {
+    text-align: center;
+  }
+
   .title__text {
     font-size: 40px;
     font-weight: 500;
     line-height: 50px;
     letter-spacing: 2px;
+
+    @include phone_layout(425px, portrait) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
     span {
       color: $text-subtitle;
     }
   }
-  @include phone_layout(425px, portrait) {
-    & {
-      text-align: center;
-    }
 
-    & &__text {
-      font-size: 24px;
-      line-height: 28px;
-    }
-  }
 }

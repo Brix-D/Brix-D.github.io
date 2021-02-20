@@ -3,6 +3,11 @@
   height: 30%;
   @include display_flex($justify_content: space-between, $align_items: flex-end);
 
+
+  @include phone_layout(425px, portrait) {
+      display: none;
+  }
+
   &__item {
     height: auto;
 
@@ -14,11 +19,5 @@
       }
     }
 
-  }
-
-  @include phone_layout(425px, portrait) {
-    & {
-      display: none;
-    }
   }
 }

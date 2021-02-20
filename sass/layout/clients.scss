@@ -3,6 +3,13 @@
   min-height: 1000px;
   position: relative;
 
+
+  @include phone_layout(425px, portrait) {
+    min-height: auto;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
   // фоновое изображение
 
   &__background {
@@ -12,6 +19,11 @@
     opacity: 1;
     position: absolute;
     z-index: -1;
+
+    @include phone_layout(425px, portrait) {
+      min-height: 1530px;
+      top:0;
+    }
   }
 
   &__polygon-art {
@@ -21,6 +33,9 @@
     background-size: contain;
     opacity: 0.8;
 
+    @include phone_layout(425px, portrait) {
+      min-height: 1530px;
+    }
   }
 
 
@@ -33,7 +48,9 @@
     z-index: 2;
     @include display_flex($flex_direction: column, $justify_content: space-between, $align_items: center);
 
-    @import "emblems";
+    @include phone_layout(425px, portrait) {
+        height: auto;
+    }
   }
 
   &__feedback {
@@ -41,33 +58,12 @@
     height: 60%;
     @include display_flex($justify_content: space-between, $align_items: stretch);
     // background-color: $blue-gray;
-  }
 
-
-  @include phone_layout(425px, portrait) {
-    &__feedback {
+    @include phone_layout(425px, portrait) {
       flex-direction: column;
     }
-
-    &__background {
-      //min-height: 1500px;
-      min-height: 1530px;
-      top:0;
-    }
-
-    &__polygon-art {
-      min-height: 1530px;
-    }
-
-    &__inner {
-      height: auto;
-    }
-
-    & {
-      //min-height: 1500px;
-      min-height: auto;
-      align-items: center;
-      padding: 20px 0px;
-    }
   }
+
+
+
 }

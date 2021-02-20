@@ -7,10 +7,21 @@
   background-attachment: fixed;
   @include display_flex($justify_content: center, $align_items: center);
 
+  @include phone_layout(425px, portrait) {
+    min-height: 660px;
+    background-position: right bottom;
+    background-attachment: unset;
+  }
+
   &__inner {
     width: 745px;
     min-height: 380px;
     @include display_flex($flex_direction: column, $justify_content: start, $align_items: center);
+
+    @include phone_layout(425px, portrait) {
+      min-height: 600px;
+      justify-content: center;
+    }
   }
 
   &__title {
@@ -25,6 +36,11 @@
     font-weight: 200;
     text-align: center;
     @extend %font-exo;
+
+    @include phone_layout(425px, portrait) {
+      font-size: 30px;
+      line-height: 35px;
+    }
   }
 
   &__play {
@@ -50,35 +66,6 @@
 
       line-height: 16px;
       color: $text-main;
-    }
-  }
-}
-
-@include phone_layout(425px, portrait) {
-  .header {
-    min-height: 660px;
-    background-position: right bottom;
-    background-attachment: unset;
-    &__inner {
-      min-height: 600px;
-      justify-content: center;
-    }
-
-    &__title {
-
-    }
-
-    &__text {
-      font-size: 30px;
-      line-height: 35px;
-    }
-
-    &__play {
-
-    }
-
-    &__try-button {
-
     }
   }
 }

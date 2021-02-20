@@ -1,4 +1,9 @@
 .feature-item {
+
+  @include phone_layout(425px, portrait) {
+    margin-top: 6%;
+  }
+
   &__icon {
     background-size: cover;
     width: 70px;
@@ -11,6 +16,11 @@
     line-height: 50px;
     letter-spacing: 1px;
     text-align: center;
+
+    @include phone_layout(425px, portrait) {
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 
   &__text {
@@ -19,24 +29,12 @@
     line-height: 26px;
     letter-spacing: 1px;
     text-align: center;
+
+    @include phone_layout(425px, portrait) {
+        font-size: 16px;
+        line-height: 24px;
+    }
   }
 
-  @include phone_layout(425px, portrait) {
-    & {
-      margin-top: 6%;
-    }
-    &:first-child {
-      //margin-top: 0%;
-    }
 
-    &__title {
-      font-size: 18px;
-      line-height: 30px;
-    }
-
-    &__text {
-      font-size: 16px;
-      line-height: 24px;
-    }
-  }
 }

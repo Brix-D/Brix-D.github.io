@@ -7,15 +7,14 @@
   font-weight: 500;
   text-transform: uppercase;
 
+  @include phone_layout(425px, portrait) {
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   .subtitle__text {
 
   }
 
-  @include phone_layout(425px, portrait) {
-    & {
-      text-align: center;
-      font-size: 16px;
-      line-height: 20px;
-    }
-  }
 }

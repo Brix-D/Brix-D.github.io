@@ -4,11 +4,19 @@
   background-color: $background-order;
   @include display_flex($justify_content: center, $align_items: center);
 
+  @include phone_layout(425px, portrait) {
+    height: auto;
+    padding: 20px 0px;
+  }
+
   &__inner {
     width: 75%;
     height: 370px;
-
     @include display_flex($flex_direction: column, $justify_content: space-between, $align_items: center);
+
+    @include phone_layout(425px, portrait) {
+      height: auto;
+    }
   }
 
   &__slogan {
@@ -22,11 +30,20 @@
   &__title {
     text-align: center;
     color: $text-light;
+    @include phone_layout(425px, portrait) {
+      & &__text {
+        font-size: 25px;
+      }
+    }
   }
 
   &__form {
     width: 100%;
     height: 150px;
+
+    @include phone_layout(425px, portrait) {
+      height: 250px;
+    }
   }
 
 
@@ -37,39 +54,16 @@
       font-size: 16px;
       line-height: 75px;
 
+      @include phone_layout(425px, portrait) {
+        line-height: 20px;
+      }
+
       & .hint__link {
         color: rgba($text-semi-light, 0.6);
 
         &:hover {
           color: rgba($text-semi-light, 1);
         }
-      }
-    }
-  }
-
-  @include phone_layout(425px, portrait) {
-    & {
-      height: auto;
-      padding: 20px 0px;
-    }
-
-    &__inner {
-      height: auto;
-    }
-
-    &__title .title__text{
-      font-size: 25px;
-    }
-
-    &__form {
-      height: 250px;
-    }
-
-
-
-    &__hint {
-      .hint__text {
-        line-height: 20px;
       }
     }
   }

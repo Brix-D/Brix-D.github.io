@@ -4,16 +4,33 @@
   @include display_flex($justify_content: center, $align_items: center);
   position: relative;
 
+  @include phone_layout(425px, portrait) {
+    min-height: auto;
+  }
+
   &__inner {
     width: 1600px;
     height: 700px;
     @include display_flex($justify_content: start, $align_items: center);
+
+    @include phone_layout(425px, portrait) {
+      @include display_flex($justify_content: center, $align_items: center);
+      padding: 20px 0px;
+      height: auto;
+    }
   }
+
   &__body {
     width: 36%;
     height: 50%;
     margin-left: 7%;
     @include display_flex($flex_direction: column, $justify_content: space-between);
+
+    @include phone_layout(425px, portrait) {
+      width: 80%;
+      height: auto;
+      margin-left: 0px;
+    }
   }
 
   &__background {
@@ -23,6 +40,10 @@
     overflow: hidden;
     position: absolute;
     z-index: -1;
+
+    @include phone_layout(425px, portrait) {
+      min-height: 100%;
+    }
   }
 
   &__trapeze {
@@ -32,35 +53,8 @@
     position: absolute;
     transform: rotate(-34deg) translateX(-240px) translateY(-120px);
     opacity: 0.8;
-  }
-
-
-  @include phone_layout(425px, portrait) {
-    &__body {
-      width: 90%;
-      height: auto;
-      margin-left: 0px;
-    }
-
-    &__inner {
-      @include display_flex($justify_content: center, $align_items: center);
-      padding: 20px 0px;
-
-      height: auto;
-    }
-
-    & {
-      // min-height: 700px;
-      min-height: auto;
-      &__background {
-        min-height: 100%;
-      }
-
-      &__trapeze {
-        //min-height: 500px;
-        //bottom: -15%;
-        display: none;
-      }
+    @include phone_layout(425px, portrait) {
+      display: none;
     }
   }
 }

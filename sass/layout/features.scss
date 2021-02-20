@@ -5,22 +5,42 @@
   position: relative;
   overflow: hidden;
 
+  @include phone_layout(425px, portrait) {
+    padding: 20px 15px;
+    min-height: auto;
+  }
+
   &__inner {
     width: 1360px;
     height: 570px;
     @include display_flex($flex_direction: column, $justify_content: space-between);
+
+    @include phone_layout(425px, portrait) {
+      height: auto;
+      align-items: center;
+    }
   }
 
   &__upper-row {
     @include display_flex($flex_direction: column, $align_items: center);
     width: 100%;
     height: 50%;
+
+    @include phone_layout(425px, portrait) {
+      height: auto;
+      text-align: center;
+    }
   }
 
   &__bottom-row {
     @include display_flex($justify_content: space-between, $align_items: stretch);
     width: 100%;
     height: 50%;
+
+    @include phone_layout(425px, portrait) {
+      @include display_flex($flex_direction: column, $justify_content: space-between, $align_items: center);
+      height: auto;
+    }
   }
 
   &__column {
@@ -28,36 +48,9 @@
     height: 100%;
     @include display_flex($flex_direction: column, $justify_content: space-between, $align_items: center);
 
-
-  }
-
-  @include phone_layout(425px, portrait) {
-
-    & {
-      padding: 20px 15px;
-      min-height: auto;
-
-      &__upper-row {
-        height: auto;
-        text-align: center;
-      }
-
-      &__bottom-row {
-        @include display_flex($flex_direction: column, $justify_content: space-between, $align_items: center);
-        //height: 1000px;
-        height: auto;
-      }
-
-      &__column {
-        width: 90%;
-        height: auto;
-      }
-
-      &__inner {
-        height: auto;
-
-        align-items: center;
-      }
+    @include phone_layout(425px, portrait) {
+      width: 90%;
+      height: auto;
     }
   }
 }

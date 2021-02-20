@@ -4,6 +4,12 @@
 
   @include display_flex($justify_content: flex-start, $align_items: center);
 
+  @include phone_layout(425px, portrait) {
+    // min-height: 550px;
+    min-height: auto;
+    position: relative;
+  }
+
   &__background {
     background-color: $background-main;
     width: 100%;
@@ -11,6 +17,11 @@
     overflow: hidden;
     position: absolute;
     z-index: -1;
+
+    @include phone_layout(425px, portrait) {
+      min-height: 100%;
+      top: 0px;
+    }
   }
 
   &__triangle {
@@ -22,47 +33,77 @@
     opacity: 0.8;
     transform: rotate(38deg) translateY(-360px) translateX(0px);
 
+    @include phone_layout(425px, portrait) {
+      width: 100%;
+      min-height: 60%;
+      display: none;
+    }
   }
 
   &__body {
     width: 66%;
     height: 170px;
-    //background-color: $background-order;
     z-index: 2;
     margin-left: 12.5%;
-
     @include display_flex($align_items: stretch);
+
+    @include phone_layout(425px, portrait) {
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      margin-left: 0px;
+      padding: 3% 20px;
+    }
 
     & .start-ex {
       width: 22%;
       font-size: 27px;
+
+      @include phone_layout(425px, portrait) {
+        width: 100%;
+        margin-left: 0px;
+      }
     }
 
     & .support {
       width: 13%;
       font-size: 22px;
       margin-left: 8%;
+
+      @include phone_layout(425px, portrait) {
+        width: 100%;
+        margin-left: 0px;
+        // display: none;
+      }
     }
 
     & .about-us {
       width: 12%;
       font-size: 22px;
       margin-left: 7%;
+
+      @include phone_layout(425px, portrait) {
+        width: 100%;
+        margin-left: 0px;
+        //display: none;
+      }
     }
 
     & .newsletter {
       width: 27%;
       font-size: 22px;
       margin-left: 6%;
+
+      @include phone_layout(425px, portrait) {
+        width: 100%;
+        margin-left: 0px;
+      }
     }
-
-
   }
 
   &__column {
-    //background-color: $background-secondary;
     @include display_flex($flex_direction: column, $justify_content: flex-start, $align_items: stretch);
-
   }
 
   &__title {
@@ -118,40 +159,14 @@
     a {
       text-decoration: none;
       color: $text-main;
+
       &:hover {
         text-decoration: underline;
       }
     }
   }
+
   &__text, &__links, .newsletter__email {
     margin-top: 15px;
-  }
-
-  @include phone_layout(425px, portrait) {
-    &__body {
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      margin-left: 0px;
-      padding: 3% 20px;
-    }
-    & {
-      min-height: 550px;
-    }
-    &__background {
-      //min-height: 620px;
-      min-height: 100%;
-    }
-
-    &__triangle {
-      width: 100%;
-      min-height: 60%;
-    }
-
-    .start-ex, .support, .about-us, .newsletter{
-      width: 100%;
-      margin-left: 0px;
-    }
   }
 }

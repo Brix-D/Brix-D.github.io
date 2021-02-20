@@ -4,10 +4,8 @@
   background: url("../images/elements/macbook.png") no-repeat;
   background-size: contain;
   background-position: center center;
-}
 
-@include phone_layout(425px, portrait) {
-  .laptop {
+  @include phone_layout(425px, portrait) {
     display: none;
   }
 }

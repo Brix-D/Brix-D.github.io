@@ -4,9 +4,17 @@
 
   @include display_flex($flex_direction: column, $align_items: center);
 
-  &__picture {
-    & img {
 
+  @include phone_layout(425px, portrait) {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+
+
+  &:first-child {
+    @include phone_layout(425px, portrait) {
+      margin-top: 0px;
     }
   }
 
@@ -19,6 +27,9 @@
     @extend %font-exo;
     text-align: center;
     margin-top: 30px;
+    @include phone_layout(425px, portrait) {
+      margin-top: 4%;
+    }
   }
 
   &__subtitle {
@@ -28,6 +39,10 @@
     @extend %font-exo;
     text-align: center;
     margin-top: 20px;
+
+    @include phone_layout(425px, portrait) {
+      margin-top: 4%;
+    }
   }
 
   &__text {
@@ -39,19 +54,8 @@
     font-style: italic;
     text-align: center;
     margin-top: 40px;
-  }
 
-  @include phone_layout(425px, portrait) {
-    & {
-      width: 100%;
-      height: auto;
-      margin-top: 10%;
-    }
-    &:first-child {
-      margin-top: 0px;
-    }
-
-    &__text, &__title, &__subtitle {
+    @include phone_layout(425px, portrait) {
       margin-top: 4%;
     }
   }

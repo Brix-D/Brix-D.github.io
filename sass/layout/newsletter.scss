@@ -3,8 +3,6 @@
     width: 100%;
     height: 50px;
 
-
-
     form {
       width: 100%;
       height: 100%;
@@ -23,6 +21,11 @@
     font-weight: 400;
     @extend %font-exo;
     line-height: 75px;
+
+    @include phone_layout(425px, portrait) {
+      width: 90%;
+    }
+
     &::placeholder {
       color: $text-main;
       text-transform: uppercase;
@@ -36,9 +39,8 @@
   &__button {
     width: 50px;
     height: 50px;
-    //background: $background-decor;
     position: relative;
-    
+
     &::after {
       content: "";
       display: block;
@@ -52,12 +54,6 @@
       top: 25%;
       right: 25%;
       position: absolute;
-    }
-  }
-  @include phone_layout(425px, portrait) {
-
-    &__text-input {
-      width: 90%;
     }
   }
 }
