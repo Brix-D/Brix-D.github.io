@@ -27,8 +27,8 @@
     text-align: center;
   }
   .title .title__text {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -43,8 +43,8 @@
 @media screen and (max-device-width: 425px) and (orientation: portrait) {
   .subtitle {
     text-align: center;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
