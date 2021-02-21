@@ -13,6 +13,9 @@
   @include phone_layout(425px, portrait) {
       display: none;
   }
+  @include tablet_layout(426px, 768px, portrait) {
+    display: none;
+  }
 }
 
 .earphones {
@@ -25,6 +28,10 @@
   @include phone_layout(425px, portrait) {
     display: none;
   }
+
+  @include tablet_layout(426px, 768px, portrait) {
+    display: none;
+  }
 }
 
 .coffee-cup {
@@ -35,6 +42,10 @@
   bottom: -130px;
 
   @include phone_layout(425px, portrait) {
+    display: none;
+  }
+
+  @include tablet_layout(426px, 768px, portrait) {
     display: none;
   }
 }

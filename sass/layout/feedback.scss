@@ -30,6 +30,10 @@
     @include phone_layout(425px, portrait) {
       margin-top: 4%;
     }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      margin-top: 5%;
+    }
   }
 
   &__subtitle {
@@ -42,6 +46,10 @@
 
     @include phone_layout(425px, portrait) {
       margin-top: 4%;
+    }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      margin-top: 5%;
     }
   }
 
@@ -57,6 +65,10 @@
 
     @include phone_layout(425px, portrait) {
       margin-top: 4%;
+    }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      margin-top: 5%;
     }
   }
 }

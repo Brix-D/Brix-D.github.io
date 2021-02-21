@@ -4,3 +4,9 @@
     @content;
   }
 }
+
+@mixin tablet_layout($min_size, $max_size, $orientation) {
+  @media screen and (min-device-width: $min_size) and (max-device-width: $max_size) and (orientation: $orientation) {
+    @content;
+  }
+}

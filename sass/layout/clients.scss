@@ -10,6 +10,9 @@
     padding: 20px 0px;
   }
 
+  @include tablet_layout(426px, 768px, portrait) {
+    min-height: 900px;
+  }
   // фоновое изображение
 
   &__background {
@@ -24,6 +27,10 @@
       min-height: 1530px;
       top:0;
     }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      min-height: 900px;
+    }
   }
 
   &__polygon-art {
@@ -35,6 +42,10 @@
 
     @include phone_layout(425px, portrait) {
       min-height: 1530px;
+    }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      min-height: 900px;
     }
   }
 
@@ -50,6 +61,13 @@
 
     @include phone_layout(425px, portrait) {
         height: auto;
+    }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      height: auto;
+      width: 85%;
+
+      padding: 20px 15px;
     }
   }
 

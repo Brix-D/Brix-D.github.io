@@ -28,6 +28,11 @@
       width: 100%;
     }
 
+    @include tablet_layout(426px, 768px, portrait) {
+      font-size: 14px;
+      padding: 1% 20px;
+    }
+
     &::placeholder {
       color: $text-light;
       text-transform: uppercase;
@@ -68,6 +73,9 @@
     @include phone_layout(425px, portrait) {
       display: none;
     }
+    @include tablet_layout(426px, 768px, portrait) {
+      display: none;
+    }
   }
 
   &::after {
@@ -81,6 +89,12 @@
     letter-spacing: 1px;
     line-height: 75px;
     @include phone_layout(425px, portrait) {
+      display: none;
+    }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      right: -8%;
+      //top: -30px;
       display: none;
     }
   }

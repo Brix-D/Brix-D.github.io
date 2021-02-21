@@ -8,6 +8,10 @@
     min-height: auto;
   }
 
+  @include tablet_layout(426px, 768px, portrait) {
+    min-height: 400px;
+  }
+
   &__inner {
     width: 1600px;
     height: 700px;
@@ -17,6 +21,13 @@
       @include display_flex($justify_content: center, $align_items: center);
       padding: 20px 0px;
       height: auto;
+    }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 20px 0px;
     }
   }
 
@@ -31,6 +42,11 @@
       height: auto;
       margin-left: 0px;
     }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      width: 85%;
+      margin-left: 0%;
+    }
   }
 
   &__background {
@@ -44,6 +60,10 @@
     @include phone_layout(425px, portrait) {
       min-height: 100%;
     }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      min-height: 100%;
+    }
   }
 
   &__trapeze {
@@ -55,6 +75,13 @@
     opacity: 0.8;
     @include phone_layout(425px, portrait) {
       display: none;
+    }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      min-height: 100%;
+      bottom: 0px;
+      left: 0px;
+      transform: rotate(-34deg) translateY(27%) translateX(-90%);
     }
   }
 }

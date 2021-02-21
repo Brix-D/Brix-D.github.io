@@ -8,6 +8,15 @@
       display: none;
   }
 
+
+  @include tablet_layout(426px, 768px, portrait) {
+    width: 100%;
+    height: 35%;
+    margin-top: 2%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   &__item {
     height: auto;
 

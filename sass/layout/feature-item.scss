@@ -21,6 +21,10 @@
       font-size: 18px;
       line-height: 30px;
     }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      line-height: 30px;
+    }
   }
 
   &__text {

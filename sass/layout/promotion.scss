@@ -9,6 +9,10 @@
     min-height: auto;
   }
 
+  @include tablet_layout(426px, 768px, portrait) {
+    min-height: auto;
+  }
+
   &__body {
     width: 62%;
     min-height: 100%;
@@ -16,6 +20,11 @@
 
     @include phone_layout(425px, portrait) {
       width: 100%;
+    }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      width: 70%;
+      padding: 20px 0px;
     }
   }
 
@@ -26,6 +35,10 @@
     @include phone_layout(425px, portrait) {
       width: 80%;
       align-items: center;
+    }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      width: 80%;
     }
   }
 
@@ -55,6 +68,10 @@
     @include phone_layout(425px, portrait) {
       display: none;
     }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      width: 30%;
+    }
   }
 
   &__triangle {
@@ -64,5 +81,12 @@
     position: absolute;
     transform: translateX(210px) translateY(550px) rotate(50deg);
     opacity: 0.8;
+
+    @include tablet_layout(426px, 768px, portrait) {
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      transform: translateY(55%) rotate(33deg);
+    }
   }
 }

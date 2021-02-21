@@ -17,6 +17,11 @@
       line-height: 28px;
     }
 
+    @include tablet_layout(426px, 768px, portrait) {
+      line-height: 40px;
+      font-size: 30px;
+    }
+
     span {
       color: $text-subtitle;
     }

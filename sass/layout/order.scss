@@ -9,6 +9,12 @@
     padding: 20px 0px;
   }
 
+
+  @include tablet_layout(426px, 768px, portrait) {
+    min-height: auto;
+    padding: 20px 0px;
+  }
+
   &__inner {
     width: 75%;
     height: 370px;
@@ -16,6 +22,11 @@
 
     @include phone_layout(425px, portrait) {
       height: auto;
+    }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      width: 85%;
+      height: 250px;
     }
   }
 
@@ -43,6 +54,10 @@
 
     @include phone_layout(425px, portrait) {
       height: 250px;
+    }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      height: auto;
     }
   }
 

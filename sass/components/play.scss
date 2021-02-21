@@ -2,6 +2,11 @@
   height: 60px;
   width: 60px;
 
+  @include tablet_layout(426px, 768px, portrait) {
+    height: 80px;
+    width: 80px;
+  }
+
   a {
     text-decoration: none;
     display: inline-block;
@@ -22,6 +27,13 @@
     width: 15px;
     height: 20px;
     background: url("../images/elements/play_arrow.png") no-repeat;
+    background-size: cover;
+
+    @include tablet_layout(426px, 768px, portrait) {
+      width: 20px;
+      height: 25px;
+    }
+
   }
 
   &:hover {

@@ -8,4 +8,9 @@
   @include phone_layout(425px, portrait) {
     display: none;
   }
+
+  @include tablet_layout(426px, 768px, portrait) {
+    width: 40%;
+    height: 200px;
+  }
 }

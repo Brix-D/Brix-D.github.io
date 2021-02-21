@@ -10,6 +10,10 @@
     position: relative;
   }
 
+  @include tablet_layout(426px, 768px, portrait) {
+    min-height: auto;
+  }
+
   &__background {
     background-color: $background-main;
     width: 100%;
@@ -38,6 +42,11 @@
       min-height: 60%;
       display: none;
     }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      top: 0px;
+      transform: rotate(38deg) translateX(30%) translateY(-95%);
+    }
   }
 
   &__body {
@@ -56,6 +65,12 @@
       padding: 3% 20px;
     }
 
+    @include tablet_layout(426px, 768px, portrait) {
+      margin-left: 5%;
+      width: 90%;
+      padding: 3% 20px;
+    }
+
     & .start-ex {
       width: 22%;
       font-size: 27px;
@@ -63,6 +78,10 @@
       @include phone_layout(425px, portrait) {
         width: 100%;
         margin-left: 0px;
+      }
+
+      @include tablet_layout(426px, 768px, portrait) {
+        width: 26%;
       }
     }
 
@@ -76,6 +95,11 @@
         margin-left: 0px;
         // display: none;
       }
+
+      @include tablet_layout(426px, 768px, portrait) {
+        width: 16%;
+        margin-left: 5%;
+      }
     }
 
     & .about-us {
@@ -88,6 +112,11 @@
         margin-left: 0px;
         //display: none;
       }
+
+      @include tablet_layout(426px, 768px, portrait) {
+        width: 16%;
+        margin-left: 5%;
+      }
     }
 
     & .newsletter {
@@ -98,6 +127,10 @@
       @include phone_layout(425px, portrait) {
         width: 100%;
         margin-left: 0px;
+      }
+
+      @include tablet_layout(426px, 768px, portrait) {
+        width: 30%;
       }
     }
   }

@@ -13,6 +13,11 @@
     background-attachment: unset;
   }
 
+  @include tablet_layout(426px, 768px, portrait) {
+    min-height: 860px;
+    background-position: right bottom;
+  }
+
   &__inner {
     width: 745px;
     min-height: 380px;
@@ -41,6 +46,11 @@
       font-size: 30px;
       line-height: 35px;
     }
+
+    @include tablet_layout(426px, 768px, portrait) {
+      font-size: 40px;
+      line-height: 50px;
+    }
   }
 
   &__play {
@@ -51,21 +61,35 @@
     width: 190px;
     height: 50px;
     margin-top: 40px;
+
+    @include tablet_layout(426px, 768px, portrait) {
+      width: 280px;
+      height: 80px;
+    }
+
     a {
       display: inline-block;
       width: 100%;
       height: 100%;
+
+      @include tablet_layout(426px, 768px, portrait) {
+        font-size: 20px;
+        line-height: 80px;
+      }
     }
   }
 
   &__hint {
     margin-top: 20px;
-
     & .hint__text {
       font-size: 14px;
-
       line-height: 16px;
       color: $text-main;
+
+      @include tablet_layout(426px, 768px, portrait) {
+        font-size: 18px;
+        line-height: 28px;
+      }
     }
   }
 }
