@@ -7,6 +7,11 @@
     width: 80px;
   }
 
+  @include tablet_layout(769px, 1024px, portrait) {
+    width: 120px;
+    height: 120px;
+  }
+
   a {
     text-decoration: none;
     display: inline-block;
@@ -32,6 +37,11 @@
     @include tablet_layout(426px, 768px, portrait) {
       width: 20px;
       height: 25px;
+    }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+      width: 30px;
+      height: 35px;
     }
 
   }

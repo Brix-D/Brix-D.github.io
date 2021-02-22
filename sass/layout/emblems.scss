@@ -17,6 +17,10 @@
     flex-wrap: wrap;
   }
 
+  @include tablet_layout(769px, 1024px, portrait) {
+    align-items: center;
+    margin-top: 4%;
+  }
   &__item {
     height: auto;
 

@@ -11,10 +11,11 @@
 @import "components/title";
 @import "components/subtitle";
 @import "components/text";
+@import "components/button";
 @import "components/form";
 @import "components/hint";
 @import "components/play";
-@import "components/button";
+
 @import "components/socials";
 
 // стили основыных секций страницы
@@ -22,6 +23,7 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/promotion";
+@import "layout/decor";
 @import "layout/features";
 @import "layout/feature-item";
 @import "layout/responsive";
@@ -31,5 +33,5 @@
 @import "layout/emblems";
 @import "layout/order";
 @import "layout/browser";
-@import "layout/decor";
+
 @import "layout/newsletter";

@@ -16,6 +16,10 @@
   @include tablet_layout(426px, 768px, portrait) {
     display: none;
   }
+
+  @include tablet_layout(769px, 1024px, portrait) {
+    left: 0%;
+  }
 }
 
 .earphones {
@@ -31,6 +35,10 @@
 
   @include tablet_layout(426px, 768px, portrait) {
     display: none;
+  }
+
+  @include tablet_layout(769px, 1024px, portrait) {
+    right: 0%;
   }
 }
 

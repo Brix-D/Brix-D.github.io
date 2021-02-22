@@ -30,6 +30,10 @@
       width: 85%;
     }
 
+    @include tablet_layout(769px, 1024px, portrait) {
+      width: 85%;
+    }
+
     &::placeholder {
       color: $text-main;
       text-transform: uppercase;

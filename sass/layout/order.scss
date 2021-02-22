@@ -28,6 +28,10 @@
       width: 85%;
       height: 250px;
     }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+      width: 85%;
+    }
   }
 
   &__slogan {
@@ -58,6 +62,10 @@
 
     @include tablet_layout(426px, 768px, portrait) {
       height: auto;
+    }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+
     }
   }
 

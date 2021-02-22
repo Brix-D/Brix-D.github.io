@@ -13,6 +13,12 @@
     line-height: 20px;
   }
 
+
+  @include tablet_layout(769px, 1024px, portrait) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
   .subtitle__text {
 
   }

@@ -13,4 +13,10 @@
     width: 40%;
     height: 200px;
   }
+
+  @include tablet_layout(769px, 1024px, portrait) {
+    height: 400px;
+    width: 35%;
+    background-position: center top;
+  }
 }

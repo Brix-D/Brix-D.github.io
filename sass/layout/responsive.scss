@@ -12,6 +12,10 @@
     min-height: 400px;
   }
 
+  @include tablet_layout(769px, 1024px, portrait) {
+    min-height: auto;
+  }
+
   &__inner {
     width: 1600px;
     height: 700px;
@@ -28,6 +32,12 @@
       width: 100%;
       height: auto;
       padding: 20px 0px;
+    }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+      height: auto;
+      padding: 40px 6%;
+      align-items: start;
     }
   }
 
@@ -46,6 +56,10 @@
     @include tablet_layout(426px, 768px, portrait) {
       width: 85%;
       margin-left: 0%;
+    }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+      width: 60%;
     }
   }
 

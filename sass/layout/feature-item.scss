@@ -8,6 +8,14 @@
     background-size: cover;
     width: 70px;
     height: 70px;
+
+    @include tablet_layout(769px, 1024px, portrait) {
+      width: 100px;
+      height: 100px;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__title {
@@ -25,6 +33,11 @@
     @include tablet_layout(426px, 768px, portrait) {
       line-height: 30px;
     }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+      font-size: 30px;
+      line-height: 50px;
+    }
   }
 
   &__text {
@@ -37,6 +50,11 @@
     @include phone_layout(425px, portrait) {
         font-size: 16px;
         line-height: 24px;
+    }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+      font-size: 24px;
+      line-height: 34px;
     }
   }
 

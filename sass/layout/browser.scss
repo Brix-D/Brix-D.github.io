@@ -21,6 +21,10 @@
     };
   }
 
+  @include tablet_layout(769px, 1024px, portrait) {
+
+  }
+
   &__inner {
     width: 55%;
     min-height: 965px;
@@ -36,6 +40,10 @@
       width: 95%;
       min-height: auto;
     }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+      width: 95%;
+    }
   }
 
   &__body {
@@ -49,6 +57,10 @@
 
     @include tablet_layout(426px, 768px, portrait) {
       height: auto;
+    }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+
     }
   }
 
@@ -78,9 +90,15 @@
 
     @include tablet_layout(426px, 768px, portrait) {
       height: 300px;
-      //width: 90%;
-      //position: relative;
-      //background-size: contain;
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-position: bottom center;
+    }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-position: bottom center;
     }
   }
 
@@ -92,7 +110,15 @@
     background-color: $background-browser;
 
     @include tablet_layout(426px, 768px, portrait) {
+      width: 90%;
+      height: 86%;
+      left: 0;
+    }
 
+    @include tablet_layout(769px, 1024px, portrait) {
+      height: 80%;
+      width: 94%;
+      left: 0;
     }
   }
 }

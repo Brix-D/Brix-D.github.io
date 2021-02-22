@@ -13,6 +13,10 @@
     min-height: auto;
   }
 
+  @include tablet_layout(769px, 1024px, portrait) {
+    min-height: auto;
+  }
+
   &__body {
     width: 62%;
     min-height: 100%;
@@ -26,6 +30,11 @@
       width: 70%;
       padding: 20px 0px;
     }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+      width: 70%;
+      padding: 40px 0px;
+    }
   }
 
   &__inner {
@@ -38,6 +47,10 @@
     }
 
     @include tablet_layout(426px, 768px, portrait) {
+      width: 80%;
+    }
+
+    @include tablet_layout(769px, 1024px, portrait) {
       width: 80%;
     }
   }
@@ -72,6 +85,10 @@
     @include tablet_layout(426px, 768px, portrait) {
       width: 30%;
     }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+      width: 30%;
+    }
   }
 
   &__triangle {
@@ -87,6 +104,13 @@
       bottom: 0;
       height: 100%;
       transform: translateY(55%) rotate(33deg);
+    }
+
+    @include tablet_layout(769px, 1024px, portrait) {
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      transform: translateY(42%) translateX(20%) rotate(27deg);
     }
   }
 }

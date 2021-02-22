@@ -5,4 +5,9 @@
   color: $text-main;
   @extend %font-exo;
   font-weight: 500;
+
+  @include tablet_layout(769px, 1024px, portrait) {
+    font-size: 24px;
+    line-height: 34px;
+  }
 }
